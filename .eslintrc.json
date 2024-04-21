@@ -8,7 +8,7 @@
   },
   "overrides": [
     {
-      "files": ["*.spec.js"],
+      "files": ["*.spec.js", "*.test.js"],
       "rules": {
         "no-magic-numbers": 0,
         "no-undefined": 0,
