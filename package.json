@@ -37,6 +37,7 @@
     "prettier": "^3.0.0"
   },
   "dependencies": {
+    "14": "^3.1.6",
     "@types/jest": "^29.5.12"
   }
 }
