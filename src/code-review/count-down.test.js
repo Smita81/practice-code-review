@@ -25,7 +25,7 @@ const countDown = (start = 0) => {
  *
  * Generates an array of integers starting from a given number down to 0.
  *
- * @param {number} [a=0] The starting number (optional, default is 0).
+ * @param {number} [a=0] - The starting number (optional, default is 0).
  * @throws {TypeError} If start is not a number.
  * @throws {Error} If start is not an integer.
  * @throws {RangeError} If start is less than 0.
