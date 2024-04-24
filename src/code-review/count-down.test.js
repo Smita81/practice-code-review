@@ -23,8 +23,13 @@ const countDown = (start = 0) => {
 // eslint-disable-next-line jsdoc/require-description
 /**
  *
+ * Generates an array of integers starting from a given number down to 0.
  *
- * @param a
+ * @param {number} [a=0] The starting number (optional, default is 0).
+ * @throws {TypeError} If start is not a number.
+ * @throws {Error} If start is not an integer.
+ * @throws {RangeError} If start is less than 0.
+ * @returns {number[]} An array of integers from start down to 0.
  */
 const secretSolution = (a = 0) => {
   if (typeof a !== 'number') throw new TypeError('start is not a number');
