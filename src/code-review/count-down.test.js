@@ -1,12 +1,12 @@
 /**
- * builds an array counting down from `start` to 0
- * @param {number} [start=0] - the number to count down from
- *  start must be an integer that is greater than 0
- * @returns {number[]} an array of all numbers from `start` to 0
+ * Builds an array counting down from `start` to 0.
+ * @param {number} [start=0] - The number to count down from.
+ * start must be an integer that is greater than 0.
+ * @returns {number[]} An array of all numbers from `start` to 0.
+ * @throws Error Start must be an integer greater than 0.
  */
-
-// -------- your solutions --------
-function countDown(start = 0) {
+/*
+const countDown = (start = 0) => {
   if (!Number.isInteger(start) || start <= 0) {
     throw new Error('Start must be an integer greater than 0.');
   }
@@ -15,12 +15,20 @@ function countDown(start = 0) {
   for (let i = start; i >= 0; i--) {
     result.push(i);
   }
-  return result;
-}
+  return result
+};
+
+*/
+// prettier-ignore
+/**
+ *
+ * @param a
+ */
+function secretSolution(a = 0) { if (typeof a !== 'number') throw new TypeError('start is not a number'); if (!Number.isInteger(a)) throw new Error('start is not an integer'); if (a < 0) throw new RangeError('start is less than 0'); const b = []; for (let c = a; c >= 0; c--) b.push(c); return b; }
 
 for (const solution of [secretSolution]) {
   // the main test suite for the function
-  describe(solution.name + ': counts down to 0', () => {
+  describe(`${solution.name}: counts down to 0`, () => {
     it('default parameter is 0 -> [0]', () => {
       expect(solution()).toEqual([0]);
     });
@@ -63,5 +71,3 @@ for (const solution of [secretSolution]) {
   });
 }
 // minified solution for testing your tests
-// prettier-ignore
-function secretSolution(a = 0) { if ("number" != typeof a) throw new TypeError("start is not a number"); if (!Number.isInteger(a)) throw new Error("start is not an integer"); if (0 > a) throw new RangeError("start is less than 0"); const b = []; for (let c = a; 0 <= c; c--) b.push(c);return b }
