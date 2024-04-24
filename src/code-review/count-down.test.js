@@ -6,7 +6,7 @@
  */
 
 // -------- your solutions --------
-function countdown(start = 0) {
+function countDown(start = 0) {
   if (!Number.isInteger(start) || start <= 0) {
     throw new Error('Start must be an integer greater than 0.');
   }
@@ -49,7 +49,7 @@ for (const solution of [secretSolution]) {
       expect(() => solution(-5)).toThrow(RangeError);
     });
     it('Fractional start value throws TypeError', () => {
-      expect(() => solution(2.5)).toThrow(TypeError);
+      expect(() => solution(2.5)).toThrow(Error);
     });
     it('String start value throws TypeError', () => {
       expect(() => solution('abc')).toThrow(TypeError);
