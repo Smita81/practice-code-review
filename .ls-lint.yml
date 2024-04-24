@@ -4,6 +4,7 @@ ls:
   .js: kebab-case
   .spec.js: kebab-case
   .config.js: kebab-case
+  .test.js: kebab-case
 
 ignore:
   - .git
