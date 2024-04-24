@@ -1,7 +1,7 @@
 /**
  * Builds an array counting down from `start` to 0.
  * @param {number} [start=0] - The number to count down from.
- * start must be an integer that is greater than 0.
+ * Start must be an integer that is greater than 0.
  * @returns {number[]} An array of all numbers from `start` to 0.
  * @throws Error Start must be an integer greater than 0.
  */
@@ -20,11 +20,22 @@ const countDown = (start = 0) => {
 
 */
 // prettier-ignore
+// eslint-disable-next-line jsdoc/require-description
 /**
+ *
  *
  * @param a
  */
-function secretSolution(a = 0) { if (typeof a !== 'number') throw new TypeError('start is not a number'); if (!Number.isInteger(a)) throw new Error('start is not an integer'); if (a < 0) throw new RangeError('start is less than 0'); const b = []; for (let c = a; c >= 0; c--) b.push(c); return b; }
+const secretSolution = (a = 0) => {
+  if (typeof a !== 'number') throw new TypeError('start is not a number');
+  if (!Number.isInteger(a)) throw new Error('start is not an integer');
+  if (a < 0) throw new RangeError('start is less than 0');
+  const b = [];
+  for (let c = a; c >= 0; c--) {
+    b.push(c);
+  }
+  return b;
+};
 
 for (const solution of [secretSolution]) {
   // the main test suite for the function

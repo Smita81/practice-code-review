@@ -1,6 +1,12 @@
 {
   "language": "en",
-  "words": [],
+  "words": [
+    "dlro",
+    "hellohello",
+    "olle",
+    "olleholleh",
+    "zyxwvutsrqponmlkjihgfedcba"
+  ],
   "ignorePaths": [
     "node_modules/**",
     "package.json",

@@ -51,6 +51,7 @@ for (const solution of [secretSolution]) {
 /**
  *
  * @param a
+ * @returns {string} The reversed argument.
  */
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 function secretSolution(a = '') { if (typeof a !== 'string') throw new TypeError('toReverse is not a string'); return a.split('').reverse().join(''); }
