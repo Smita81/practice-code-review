@@ -1,6 +1,16 @@
 {
   "language": "en",
-  "words": ["dlrow", "FDSA", "Numberies", "Numbery", "olleh", "sbor"],
+  "words": [
+    "dlrow",
+    "FDSA",
+    "hellohello",
+    "Numberies",
+    "Numbery",
+    "olleh",
+    "olleholleh",
+    "sbor",
+    "zyxwvutsrqponmlkjihgfedcba"
+  ],
   "ignorePaths": [
     "node_modules/**",
     "package.json",
