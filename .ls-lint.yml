@@ -3,6 +3,7 @@ ls:
   .md: kebab-case | regex:[0-9A-Z\-]+
   .js: kebab-case
   .spec.js: kebab-case
+  .test.js: kebab-case
   .config.js: kebab-case
 
 ignore:

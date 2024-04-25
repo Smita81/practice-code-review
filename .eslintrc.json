@@ -1,5 +1,5 @@
 {
-  "plugins": ["jsdoc", "prefer-arrow", "sonar.js"],
+  "plugins": ["jsdoc", "prefer-arrow", "sonarjs"],
   "parserOptions": {
     "sourceType": "module"
   },
@@ -12,7 +12,7 @@
       "rules": {
         "no-magic-numbers": 0,
         "no-undefined": 0,
-        "sonar-js/no-duplicate-string": 0
+        "sonarjs/no-duplicate-string": 0
       },
       "env": {
         "jest": true
@@ -37,7 +37,7 @@
   "extends": [
     "eslint:recommended",
     "airbnb-base",
-    "plugin:sonar.js/recommended"
+    "plugin:sonarjs/recommended"
   ],
   "rules": {
     "no-var": 1,
@@ -80,7 +80,7 @@
 
     "prefer-arrow/prefer-arrow-functions": ["warn"],
 
-    "sonar.js/prefer-immediate-return": 0,
+    "sonarjs/prefer-immediate-return": 0,
 
     "jsdoc/check-alignment": 1,
     "jsdoc/check-indentation": 1,
@@ -91,7 +91,7 @@
     "jsdoc/check-types": 1,
     "jsdoc/check-values": 1,
     "jsdoc/empty-tags": 1,
-    "jsdoc/newline-after-description": 1,
+    "jsdoc/newline-after-description": 0,
     "jsdoc/no-bad-blocks": 1,
     "jsdoc/no-undefined-types": 1,
     "jsdoc/require-description": 1,

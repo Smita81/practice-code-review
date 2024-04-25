@@ -1,17 +1,17 @@
 /**
- * reverses a string
- * @param {string} [toReverse=''] - the string to reverse
- * @returns {string} the reversed argument
+ * Reverses a string.
+ * @param {string} [str=''] - The string to reverse.
+ * @returns {string} The reversed argument.
  */
-
-// -------- your solutions --------
+// eslint-disable-next-line no-unused-vars
 const reverseString = (str) => {
   return str.split('').reverse().join('');
 };
 
+// eslint-disable-next-line no-use-before-define
 for (const solution of [secretSolution]) {
   // the main test suite for the function
-  describe(solution.name + ': reverses a string', () => {
+  describe(`${solution.name}: reverses a string`, () => {
     it('default parameter is an empty string -> ""', () => {
       expect(solution()).toEqual('');
     });
@@ -36,4 +36,6 @@ for (const solution of [secretSolution]) {
 
 // minified solution for testing your tests
 // prettier-ignore
-function secretSolution(a = '') { if ("string" != typeof a) throw new TypeError("toReverse is not a string"); return a.split("").reverse().join("") }
+// eslint-disable-next-line max-len
+// eslint-disable-next-line jsdoc/require-jsdoc, prefer-arrow/prefer-arrow-functions, yoda, quotes, eqeqeq
+function secretSolution(a = '') { if ("string" != typeof a) throw new TypeError("toReverse is not a string"); return a.split("").reverse().join(""); }
