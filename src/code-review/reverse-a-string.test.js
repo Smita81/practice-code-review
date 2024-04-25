@@ -22,7 +22,10 @@ describe('Reverse String Tests', () => {
       });
       it('a string with all capital letters', () => {
         expect(solution('ASDF')).toEqual('FDSA');
-      }); // write at least 5 more tests ...
+      });
+
+      // write at least 5 more tests ...
+
       it('a string with mixed cases and spaces', () => {
         expect(solution('Hello World')).toEqual('dlroW olleH');
       });
