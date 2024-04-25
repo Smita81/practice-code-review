@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "words": [],
+  "words": ["dlrow", "FDSA", "olleh"],
   "ignorePaths": [
     "node_modules/**",
     "package.json",
