@@ -1,15 +1,12 @@
+/* eslint-disable max-len */
 // #todo
-
-'use strict';
-
 /**
- * removes all odd numbers from an array of numbers
- * does not modify the argument (no side-effects)
- * @param {number[]} arrayOfNumbers - the array of numbers to filter
- * @returns {number[]} an array with only even numbers
+ * Removes all odd numbers from an array of numbers.
+ * Does not modify the argument (no side-effects).
+ * @param {number[]} arrayOfNumbers - The array of numbers to filter.
+ * @returns {number[]} An array with only even numbers.
  */
-
-// -------- your solutions --------
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions, no-unused-vars
 function removeOddNumbers(arrayOfNumbers) {
   // Filter out odd numbers from the array
   const evenNumbers = arrayOfNumbers.filter((number) => number % 2 === 0);
@@ -18,8 +15,9 @@ function removeOddNumbers(arrayOfNumbers) {
   return evenNumbers;
 }
 
+// eslint-disable-next-line no-use-before-define
 for (const solution of [secretSolution]) {
-  describe(solution.name + ': only even numbers', () => {
+  describe(`${solution.name}: only even numbers`, () => {
     describe('when there are only odd numbers in the array', () => {
       it('should return an empty array', () => {
         const input = [1, 3, 5, 7];
@@ -42,4 +40,5 @@ for (const solution of [secretSolution]) {
 
 // minified solution for testing your tests
 // prettier-ignore
-function secretSolution(a) { if (!Array.isArray(a)) { throw new TypeError("arrayOfNumbers is not an array"); } const b = a.some(a => "number" != typeof a); if (b) { throw new TypeError("arrayOfNumbers does not contain only numbers"); } const c = a.filter(a => 0 == a % 2); return c }
+// eslint-disable-next-line jsdoc/require-jsdoc, prefer-arrow/prefer-arrow-functions, yoda, quotes, eqeqeq, arrow-parens, no-shadow
+function secretSolution(a) { if (!Array.isArray(a)) { throw new TypeError("arrayOfNumbers is not an array"); } const b = a.some(a => "number" != typeof a); if (b) { throw new TypeError("arrayOfNumbers does not contain only numbers"); } const c = a.filter(a => 0 == a % 2); return c; }
