@@ -1,39 +1,32 @@
+/* eslint-disable no-undef */
 /**
- * reverses a string
- * @param {string} [toReverse=''] - the string to reverse
- * @returns {string} the reversed argument
+ * Reverses a string.
+ * @param {string} [toReverse=''] - The string to reverse.
+ * @returns {string} - The reversed argument.
  */
 
 // -------- your solutions --------
-const reverseString = (str) => {
+const secretSolution = (str) => {
   return str.split('').reverse().join('');
 };
 
-for (const solution of [secretSolution]) {
-  // the main test suite for the function
-  describe(solution.name + ': reverses a string', () => {
-    it('default parameter is an empty string -> ""', () => {
-      expect(solution()).toEqual('');
-    });
-    it('an empty string -> ""', () => {
-      expect(solution('')).toEqual('');
-    });
-    it('a string with all capital letters', () => {
-      expect(solution('ASDF')).toEqual('FDSA');
-    });
-    // write at least 5 more tests ...
-    it('a string is a number', () => {
-      expect(solution('123')).toEqual('321');
-    });
-    it('a string is a number', () => {
-      expect(solution('!@#$%')).toEqual('%$#@!');
-    });
-    it('is a string ', () => {
-      expect(solution('hello world')).toEqual('dlrow olleh');
-    });
+describe('secretSolution: reverses a string', () => {
+  it('default parameter is an empty string -> ""', () => {
+    expect(secretSolution()).toEqual('');
   });
-}
-
-// minified solution for testing your tests
-// prettier-ignore
-function secretSolution(a = '') { if ("string" != typeof a) throw new TypeError("toReverse is not a string"); return a.split("").reverse().join("") }
+  it('an empty string -> ""', () => {
+    expect(secretSolution('')).toEqual('');
+  });
+  it('a string with all capital letters', () => {
+    expect(secretSolution('ASDF')).toEqual('FDSA');
+  });
+  it('a string is a number', () => {
+    expect(secretSolution('123')).toEqual('321');
+  });
+  it('a string with special characters', () => {
+    expect(secretSolution('!@#$%')).toEqual('%$#@!');
+  });
+  it('a string with spaces', () => {
+    expect(secretSolution('hello world')).toEqual('dlrow olleh');
+  });
+});

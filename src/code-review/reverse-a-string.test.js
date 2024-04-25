@@ -36,9 +36,7 @@ for (const solution of [secretSolution]) {
       expect(solution('12345')).toEqual('54321');
     });
     it('a long string', () => {
-      expect(solution('abcdefghijklmnopqrstuvwxyz')).toEqual(
-        'zyxwvutsrqponmlkjihgfedcba',
-      );
+      expect(solution('hippopotamus')).toEqual('sumatopoppih');
     });
     it('a string with repeated characters', () => {
       expect(solution('hellohello')).toEqual('olleholleh');
@@ -49,8 +47,10 @@ for (const solution of [secretSolution]) {
 // minified solution for testing your tests
 // prettier-ignore
 /**
- *
- * @param a
+ * Test.
+ * @param a Test.
+ * @returns test
+ * @throws TypeError('toReverse is not a string')
  */
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 function secretSolution(a = '') { if (typeof a !== 'string') throw new TypeError('toReverse is not a string'); return a.split('').reverse().join(''); }
