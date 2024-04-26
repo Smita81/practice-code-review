@@ -36,8 +36,11 @@ const mapFilterReduce = (arr) => {
 
   return sumOfNumberies;
 };
+// eslint-disable-next-line max-len
+// eslint-disable-next-line import/first, import/newline-after-import, import/no-unresolved, no-trailing-spaces
+
 for (const solution of [
-  // eslint-disable-next-line no-undef
+  // eslint-disable-next-line no-use-before-define, no-undef
   secretSolution,
   // mapFilterReduce,
 ]) {
