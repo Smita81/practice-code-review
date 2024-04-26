@@ -36,9 +36,8 @@ const mapFilterReduce = (arr) => {
 
   return sumOfNumberies;
 };
-
 for (const solution of [
-  // eslint-disable-next-line no-use-before-define, no-undef
+  // eslint-disable-next-line no-undef
   secretSolution,
   // mapFilterReduce,
 ]) {
