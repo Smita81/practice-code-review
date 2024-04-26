@@ -1,17 +1,14 @@
 // #todo
-
 // eslint-disable-next-line strict, lines-around-directive
 'use strict';
-
 /**
- * Sums all numbery strings in an array of strings
- * Returns 0 if the array is empty
- * It does not modify the original array (no side-effects)
- * @param {string[]} arr - The array of strings
- * @returns {number} The sum of all numbery strings
+ * Sums all numbery strings in an array of strings.
+ * Returns 0 if the array is empty.
+ * It does not modify the original array (no side-effects).
+ * @param {string[]} arr - The array of strings.
+ * @returns {number} The sum of all numbery strings.
  */
 
-// -------- your solutions --------
 const sumNumberyStrings = (arr) => {
   let sum = 0;
   for (const str of arr) {
@@ -23,6 +20,7 @@ const sumNumberyStrings = (arr) => {
   }
   return sum;
 };
+
 // eslint-disable-next-line no-unused-vars
 const mapFilterReduce = (arr) => {
   // these work, you need to pass them to the right array methods
@@ -38,8 +36,6 @@ const mapFilterReduce = (arr) => {
 
   return sumOfNumberies;
 };
-
-// -------- your solutions --------
 
 for (const solution of [
   // eslint-disable-next-line no-use-before-define, no-undef
