@@ -20,44 +20,23 @@ const sumNumberyStrings = (arr) => {
   }
   return sum;
 };
-
-// eslint-disable-next-line no-unused-vars
-const mapFilterReduce = (arr) => {
-  // these work, you need to pass them to the right array methods
-  const isNotNaN = (entry) => !Number.isNaN(entry);
-  const sumNumbers = (acc, next) => acc + next;
-  const castToNumber = (entry) => Number(entry);
-
-  // fill in the array methods and pass in the correct logic
-  const sumOfNumberies = arr
-    .map(castToNumber) // convert each string to a number
-    .filter(isNotNaN) // filter out non-numeric values
-    .reduce(sumNumbers, 0); // sum the remaining values, starting from 0
-
-  return sumOfNumberies;
-};
-// eslint-disable-next-line max-len
-// eslint-disable-next-line import/first, import/newline-after-import, import/no-unresolved, no-trailing-spaces
-
 for (const solution of [
-  // eslint-disable-next-line no-use-before-define, no-undef
-  secretSolution,
-  // mapFilterReduce,
+  sumNumberyStrings, // Updated function name to match the actual function
 ]) {
   describe(`${solution.name}: sumNumberyStrings`, () => {
     describe('checking different test cases', () => {
       it('returns 0 for an empty array', () => {
-        const result = sumNumberyStrings([]);
+        const result = solution([]);
         expect(result).toBe(0);
       });
       it('returns 0 if there is no numbery strings', () => {
         const arr = ['a', 'b', 'c'];
-        const result = sumNumberyStrings(arr);
+        const result = solution(arr);
         expect(result).toBe(0);
       });
       it('returns sum of the numbery strings', () => {
         const arr = [56, 'a', 8, 'b', 98, 5, 'c'];
-        const result = sumNumberyStrings(arr);
+        const result = solution(arr);
         expect(result).toBe(56 + 8 + 98 + 5);
       });
     });
