@@ -17,13 +17,13 @@
   // MD003/heading-style/header-style - Heading style
   "MD003": {
     // Heading style
-    "style": "consistent"
+    "style": "consistent",
   },
 
   // MD004/ul-style - Unordered list style
   "MD004": {
     // List style
-    "style": "consistent"
+    "style": "consistent",
   },
 
   // MD005/list-indent - Inconsistent indentation for list items at the same level
@@ -38,7 +38,7 @@
     // Spaces for indent
     "indent": 2,
     // Whether to indent the first level of the list
-    "start_indented": false
+    "start_indented": false,
   },
 
   // MD009/no-trailing-spaces - Trailing spaces
@@ -48,13 +48,13 @@
     // Allow spaces for empty lines in list items
     "list_item_empty_lines": false,
     // Include unnecessary breaks
-    "strict": false
+    "strict": false,
   },
 
   // MD010/no-hard-tabs - Hard tabs
   "MD010": {
     // Include code blocks
-    "code_blocks": true
+    "code_blocks": true,
   },
 
   // MD011/no-reversed-links - Reversed link syntax
@@ -63,7 +63,7 @@
   // MD012/no-multiple-blanks - Multiple consecutive blank lines
   "MD012": {
     // Consecutive blank lines
-    "maximum": 1
+    "maximum": 1,
   },
 
   // MD013/line-length - Line length
@@ -85,7 +85,7 @@
     // Strict length checking
     "strict": false,
     // Stern length checking
-    "stern": false
+    "stern": false,
   },
 
   // MD014/commands-show-output - Dollar signs used before commands without showing output
@@ -108,7 +108,7 @@
     // Blank lines above heading
     "lines_above": 1,
     // Blank lines below heading
-    "lines_below": 1
+    "lines_below": 1,
   },
 
   // MD023/heading-start-left/header-start-left - Headings must start at the beginning of the line
@@ -119,7 +119,7 @@
     // Only check sibling headings
     "allow_different_nesting": true,
     // Only check sibling headings
-    "siblings_only": true
+    "siblings_only": true,
   },
 
   // MD025/single-title/single-h1 - Multiple top-level headings in the same document
@@ -127,13 +127,13 @@
     // Heading level
     "level": 1,
     // RegExp for matching title in front matter
-    "front_matter_title": "^\\s*title\\s*[:=]"
+    "front_matter_title": "^\\s*title\\s*[:=]",
   },
 
   // MD026/no-trailing-punctuation - Trailing punctuation in heading
   "MD026": {
     // Punctuation characters
-    "punctuation": ".,;:!。，；：！"
+    "punctuation": ".,;:!。，；：！",
   },
 
   // MD027/no-multiple-space-blockquote - Multiple spaces after blockquote symbol
@@ -145,7 +145,7 @@
   // MD029/ol-prefix - Ordered list item prefix
   "MD029": {
     // List style
-    "style": "one_or_ordered"
+    "style": "one_or_ordered",
   },
 
   // MD030/list-marker-space - Spaces after list markers
@@ -157,13 +157,13 @@
     // Spaces for multi-line unordered list items
     "ul_multi": 1,
     // Spaces for multi-line ordered list items
-    "ol_multi": 1
+    "ol_multi": 1,
   },
 
   // MD031/blanks-around-fences - Fenced code blocks should be surrounded by blank lines
   "MD031": {
     // Include list items
-    "list_items": true
+    "list_items": true,
   },
 
   // MD032/blanks-around-lists - Lists should be surrounded by blank lines
@@ -184,8 +184,8 @@
       "table",
       "a",
       "sup",
-      "img"
-    ]
+      "img",
+    ],
   },
 
   // MD034/no-bare-urls - Bare URL used
@@ -194,13 +194,13 @@
   // MD035/hr-style - Horizontal rule style
   "MD035": {
     // Horizontal rule style
-    "style": "consistent"
+    "style": "consistent",
   },
 
   // MD036/no-emphasis-as-heading/no-emphasis-as-header - Emphasis used instead of a heading
   "MD036": {
     // Punctuation characters
-    "punctuation": ".,;:!?。，；：！？"
+    "punctuation": ".,;:!?。，；：！？",
   },
 
   // MD037/no-space-in-emphasis - Spaces inside emphasis markers
@@ -220,7 +220,7 @@
     // Heading level
     "level": 1,
     // RegExp for matching title in front matter
-    "front_matter_title": "^\\s*title\\s*[:=]"
+    "front_matter_title": "^\\s*title\\s*[:=]",
   },
 
   // MD042/no-empty-links - No empty links
@@ -240,7 +240,7 @@
     // List of proper names
     "names": [],
     // Include code blocks
-    "code_blocks": true
+    "code_blocks": true,
   },
 
   // MD045/no-alt-text - Images should have alternate text (alt text)
@@ -249,7 +249,7 @@
   // MD046/code-block-style - Code block style
   "MD046": {
     // Block style
-    "style": "consistent"
+    "style": "consistent",
   },
 
   // MD047/single-trailing-newline - Files should end with a single newline character
@@ -258,6 +258,6 @@
   // MD048/code-fence-style - Code fence style
   "MD048": {
     // Code fence style
-    "style": "consistent"
-  }
+    "style": "consistent",
+  },
 }
