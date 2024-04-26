@@ -1,7 +1,5 @@
 // #todo
-
-'use strict';
-
+// eslint-disable-next-line strict
 /**
  * Sums all numbery strings in an array of strings.
  * Returns 0 if the array is empty.
@@ -10,7 +8,6 @@
  * @returns {number} The sum of all numbery strings.
  */
 
-// -------- your solutions --------
 const sumNumberyStrings = (arr) => {
   let sum = 0;
   for (const str of arr) {
